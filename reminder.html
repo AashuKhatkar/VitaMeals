@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://png.pngtree.com/background/20211215/original/pngtree-blur-light-spots-warm-color-bokeh-white-light-effect-background-picture-image_1465634.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;;
+            background-attachment: fixed;
+            background-position: center;
+            background-blend-mode: overlay;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #ccccccf3;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPVX9c5Sskt170yxQbAz19iSc1hxDWUGpMfiJAKJV-2gFS19t781509wsU-EAi0ezF2Po&usqp=CAU);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .reminder-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea, button {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Set a Reminder</h1>
+        <form class="reminder-form">
+            <label for="title">Reminder Title:</label>
+            <input type="text" id="title" name="title" placeholder="Enter reminder title" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="notes">Notes:</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Additional notes"></textarea>
+
+            <button type="submit">Save Reminder</button>
+        </form>
+    </div>
+</body>
+</html></html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitaMeals|Home</title>
+    <link rel="stylesheet" href="frontpage.css">
+    <link rel="stylesheet" href="progress.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+      <img src="C:\Users\DELL\OneDrive\Desktop\vm.jpg" alt="logo">
+        <div class="logo">VitaMeals</div>
+        <nav>
+          <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="frontpage.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+<body>
+  <div class="container">
+    <header>
+      <h1>Recovery Progress Dashboard</h1>
+    </header>
+    
+    <section class="dashboard">
+      <div class="progress-card">
+        <h2>Vitamin D Recovery</h2>
+        <canvas id="vitaminDChart"></canvas>
+      </div>
+
+      <div class="progress-card">
+        <h2>Iron Level Recovery</h2>
+        <canvas id="ironLevelChart"></canvas>
+      </div>
+
+      <div class="progress-card">
+        <h2>Calcium Level Recovery</h2>
+        <canvas id="calciumLevelChart"></canvas>
+      </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Deficiency Tracker. All rights reserved.</p>
+      </footer>
+  </div>
+
+  <script src="progress.js"></script>
+</body>
+</html>

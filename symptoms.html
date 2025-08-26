@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VitaMeals|Symptom Checker</title>
+  <link rel="stylesheet" href="frontpage.css">
+  <link rel="stylesheet" href="symptoms.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <img src="C:\Users\DELL\OneDrive\Desktop\vm.jpg" alt="logo">
+          <div class="logo">VitaMeals</div>
+      <nav>
+        <ul>
+          <li><a href="frontpage.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="symptoms-section">
+    <h1>Check Your Symptoms</h1>
+    <p>Select the symptoms you're experiencing to identify possible deficiencies.</p>
+    <div class="symptoms-form">
+      <h2>Select Symptoms</h2>
+      <form id="symptoms-form">
+        <!-- Fatigue-related symptoms -->
+        <fieldset>
+          <legend>Fatigue and Weakness</legend>
+          <label><input type="checkbox" name="symptom" value="fatigue"> Fatigue</label>
+          <label><input type="checkbox" name="symptom" value="weakness"> Weakness</label>
+          <label><input type="checkbox" name="symptom" value="low-energy"> Low energy</label>
+        </fieldset>
+
+        <!-- Skin-related symptoms -->
+        <fieldset>
+          <legend>Skin Issues</legend>
+          <label><input type="checkbox" name="symptom" value="dry-skin"> Dry skin</label>
+          <label><input type="checkbox" name="symptom" value="acne"> Acne</label>
+          <label><input type="checkbox" name="symptom" value="pale-skin"> Pale skin</label>
+        </fieldset>
+
+        <!-- Hair-related symptoms -->
+        <fieldset>
+          <legend>Hair Problems</legend>
+          <label><input type="checkbox" name="symptom" value="hair-loss"> Hair loss</label>
+          <label><input type="checkbox" name="symptom" value="dry-hair"> Dry hair</label>
+          <label><input type="checkbox" name="symptom" value="brittle-hair"> Brittle hair</label>
+        </fieldset>
+
+        <!-- Mood-related symptoms -->
+        <fieldset>
+          <legend>Mood and Mental Health</legend>
+          <label><input type="checkbox" name="symptom" value="depression"> Depression</label>
+          <label><input type="checkbox" name="symptom" value="anxiety"> Anxiety</label>
+          <label><input type="checkbox" name="symptom" value="irritability"> Irritability</label>
+        </fieldset>
+
+        <!-- Digestive-related symptoms -->
+        <fieldset>
+          <legend>Digestive Issues</legend>
+          <label><input type="checkbox" name="symptom" value="constipation"> Constipation</label>
+          <label><input type="checkbox" name="symptom" value="diarrhea"> Diarrhea</label>
+          <label><input type="checkbox" name="symptom" value="bloating"> Bloating</label>
+        </fieldset>
+
+        <!-- Bone-related symptoms -->
+        <fieldset>
+          <legend>Bone and Joint Problems</legend>
+          <label><input type="checkbox" name="symptom" value="joint-pain"> Joint pain</label>
+          <label><input type="checkbox" name="symptom" value="bone-pain"> Bone pain</label>
+          <label><input type="checkbox" name="symptom" value="fractures"> Frequent fractures</label>
+        </fieldset>
+
+        <!-- Other symptoms -->
+        <fieldset>
+          <legend>Other Symptoms</legend>
+          <label><input type="checkbox" name="symptom" value="headaches"> Headaches</label>
+          <label><input type="checkbox" name="symptom" value="cravings"> Food cravings</label>
+          <label><input type="checkbox" name="symptom" value="numbness"> Numbness or tingling</label>
+        </fieldset>
+
+        <button type="submit" id="submit-btn">Check Deficiencies</button>
+      </form>
+    </div>
+
+    <div id="result" class="hidden">
+      <!-- <h2>Possible Deficiencies</h2> -->
+      <div id="deficiencies"></div>
+      <div id="recommendations"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 VitaMeals. All rights reserved.</p>
+  </footer>
+
+  <script src="symptoms.js"></script>
+</body>
+</html>

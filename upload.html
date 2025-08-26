@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitaMeals|Upload Reports</title>
+    <link
+    <link rel="stylesheet" href="upload.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+      <img src="C:\Users\DELL\OneDrive\Desktop\vm.jpg" alt="logo">
+        <div class="logo">VitaMeals</div>
+        <nav>
+          <ul>
+            <li><a href="frontpage.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Upload Your Doctor's Report</h1>
+        <p>Get personalized health insights by uploading your report in PDF, JPG, or PNG format.</p>
+        <div class="upload-box">
+          <input type="file" id="report-upload" accept=".pdf,.jpg,.png">
+          <label for="report-upload" id="upload-label">
+            <i class="fas fa-cloud-upload-alt"></i>
+            <span id="upload-text">Choose File</span>
+            <span id="file-name"></span>
+          </label>
+          <button id="upload-btn">Upload</button>
+        </div>
+        <div id="loading" class="hidden">
+          <div class="spinner"></div>
+          <p>Analyzing your report...</p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- <section id="result" class="hidden">
+      <div class="result-card">
+        <h2>Your Results</h2>
+        <div class="result-content">
+          <div id="deficiencies">
+            <h3>Deficiencies</h3>
+            <ul></ul>
+          </div>
+          <div id="recommendations">
+            <h3>Recommendations</h3>
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  
+    <footer>
+      <p>&copy; 2025 VitaMeals. All rights reserved.</p>
+    </footer>
+  
+    <script src="upload.js"></script>
+    <script src="server.js"></script>
+  </body>
+  </html>

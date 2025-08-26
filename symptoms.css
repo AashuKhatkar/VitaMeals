@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #4CAF50, #4CAF50, #4CAF50, #45a049);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: white;
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Navbar */
+  /* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  } */
+  /*jkjh
+  /* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('C:\upload page.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: -1;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: rgba(255, 255, 255, 0.1);
+    background-color: #4CAF50;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Symptoms Section */
+  .symptoms-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .symptoms-section h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .symptoms-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .symptoms-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  fieldset {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  legend {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    padding: 0 10px;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0;
+    color: white;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  #submit-btn {
+    background-color: white;
+    color: #4CAF50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  #submit-btn:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+  }
+  
+  /* Result Section */
+  #result {
+    margin-top: 20px;
+  }
+  
+  #deficiencies, #recommendations {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    margin-bottom: 20px;
+  }
+  
+  #deficiencies h3, #recommendations h3 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+  }
